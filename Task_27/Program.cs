@@ -10,13 +10,10 @@ int GetSumOfDigits(int value)
     int sum = 0;
     int rest = 0;
 
-    while(true) {
+    while(value != 0) {
         rest = value % 10;
         sum = sum + rest;
         value = value / 10;
-        if(value == 0) {
-            break;
-        }
     }
 
     return sum;
@@ -27,7 +24,7 @@ void main()
 
     Console.WriteLine("\n-------Task-27 ------- \n");
 
-    Console.Write("Input digit: ");
+    Console.Write("Input number: ");
     String? strValue = Console.ReadLine();
     int value = 0;
     if( String.IsNullOrEmpty(strValue) == false)
@@ -36,7 +33,7 @@ void main()
     }
 
     int sum = GetSumOfDigits(value);
-    Console.WriteLine($"For digit: {value}, Sum is: {sum}");
+    Console.WriteLine($"For number: {value}, Sum of digits in a number: {sum}");
 }
 
 main();

@@ -37,7 +37,7 @@ int InputAndGetBinaryDigit()
 {
     int value = 0;
 
-    Console.Write(" --- Input digits as binary (as example 11100101010), the first digit must be 1 (one).");
+    Console.Write(" --- Input number as binary (as example 11100101010), the first digit must be 1 (one).");
     Console.Write("\n --- The number of binary digits is any.");
 
     Console.Write("\nInput digits as binary, please: ");
